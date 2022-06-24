@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Yeseva+One&display=swap');
+
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Yeseva One', cursive;
+*/
+
+
+* {
+  transition: all 250ms ease-in-out;
+}
+
+html{
+  height: auto;
+}
+
+
+.intro-card {
+   background-color: rgba(66, 94, 121, 0.0);
+   backdrop-filter: blur(5px);
+   border: 0;
+}
+
+.intro-heading {
+   font-size: 4.5rem ;
+   font-family: 'Yeseva One', cursive;
+   color: rgb(83, 83, 83);
+}
+.back-img-section {
+  background-image: url(./images/back.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.myname {
+   color: black;
+}
+
+.team-card {
+   width: 95%;
+}
+
+.contact-form-row {
+   width: 80%;
+}
+
+.contact-form-row :is(input::placeholder, textarea::placeholder)  {
+   color: rgb(179, 179, 179);
+}
+
+.myfooter {
+   min-height: 150px;
+}
+
+
+.social-media-row span {
+  color: rgba(158, 158, 158, 0.5) ;
+}
+.social-media-row i {
+   color: rgba(158, 158, 158, 0.5) ;
+}
+.social-media-row i:hover {
+   color: rgba(158, 158, 158, 0.8) ;
+}
+
+.copyright-row {
+   color: rgba(185, 185, 185, 0.5) ;
+}
+.copyright-row #about-me{
+   color: rgba(185, 185, 185, 0.5) ;
+   text-decoration: none;
+   font-weight: bold;
+}
+.copyright-row #about-me:hover {
+   color:rgba(209, 209, 209, 0.5) ;
+}
+
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+   .back-img-section {
+     min-height: 80vh;
+   }
+   .intro-heading {
+     font-size: 4rem;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .back-img-section {
+     min-height: 70vh;
+   }
+   .intro-heading {
+    font-size: 3rem;
+  }
+  .contact-form-row {
+     width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .back-img-section {
+        min-height: 60vh;
+    }
+    .intro-heading {
+      font-size: 2.3rem;
+    }
+    .contact-form-row {
+       width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .intro-heading {
+      font-size: 2rem;
+    }
+    .team-card {
+      width: 100%;
+    }
+    .team-card .card-text {
+      font-size: 0.9rem;
+    }
+}
+
+/* @media screen and (max-width: 265px) {
+
+} */
+
+
+/* @media screen and (max-width: 425px) {
+   #course1-title, #course2-title {
+     
+   }
+} */
+
+ /* media query for horizontal orientation */
+ @media screen and (orientation: landscape) {
+   .back-img-section {
+    min-height: 100vh;
+   }
+ }
+
+
+ /* course title responsive */
